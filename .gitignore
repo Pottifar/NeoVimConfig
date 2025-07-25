@@ -1,0 +1,24 @@
+# Swap/backup/undo files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.undo
+
+# Lazy plugin manager download dir
+lazy-lock.json
+lua/lazy-lock.json
+~/.local/share/nvim/lazy
+lazy/
+
+# Undo and backup directories (if set manually)
+undo/
+backup/
+swap/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+nvim.log

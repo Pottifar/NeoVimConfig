@@ -1,3 +1,4 @@
+
 -- Load plugins
 require("core.plugins")
 require("core.nvimtree")
@@ -12,6 +13,9 @@ vim.cmd([[highlight CursorLine ctermbg=236 guibg=#2a2a2a]])
 vim.cmd([[syntax on]])
 vim.cmd([[filetype plugin indent on]])
 
+local is_windows = vim.loop.os_uname().sysname == "Windows_NT"
+local is_macos = vim.loop.os_uname().sysname == "Darwin"
+local is_linux = not is_windows and not is_macos
 
 vim.cmd [[
   autocmd BufRead,BufNewFile *.tf,*.tfvars set filetype=terraform

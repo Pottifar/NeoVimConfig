@@ -1,4 +1,3 @@
-
 -- lazy.nvim bootstrap
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -19,6 +18,7 @@ require("lazy").setup({
   "nvim-treesitter/nvim-treesitter",
   "akinsho/bufferline.nvim",
   "kyazdani42/nvim-web-devicons",
+  "ThePrimeagen/vim-be-good",
 
   -- LSP manager: mason + automatic setup (backwards-compatible)
   {
